@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Faceted gem — light jewel tones like 💎 -->
+  <defs>
+    <linearGradient id="gTop" x1="16" y1="0" x2="16" y2="14" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="gL" x1="4" y1="12" x2="16" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0EA5E9"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="gR" x1="28" y1="12" x2="16" y2="30" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#0891B2"/>
+    </linearGradient>
+    <linearGradient id="gCrown" x1="16" y1="4" x2="16" y2="14" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BAE6FD"/>
+      <stop offset="1" stop-color="#7DD3FC"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer gem silhouette -->
+  <path d="M16 3L4 13L16 29L28 13L16 3Z" fill="url(#gL)" stroke="#0369A1" stroke-width="0.75" stroke-linejoin="round"/>
+  <path d="M16 3L4 13H28L16 3Z" fill="url(#gTop)"/>
+  <path d="M10 13L16 3L22 13H10Z" fill="url(#gCrown)"/>
+  <path d="M4 13L16 29L10 13H4Z" fill="url(#gL)"/>
+  <path d="M28 13L16 29L22 13H28Z" fill="url(#gR)"/>
+  <!-- Center facet highlight -->
+  <path d="M12 13L16 22L20 13H12Z" fill="#F0F9FF" fill-opacity="0.85"/>
+</svg>

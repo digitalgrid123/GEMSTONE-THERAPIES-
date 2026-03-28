@@ -1,26 +1,129 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans:
+    var(--font-lato), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif:
+    var(--font-playfair), ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Custom Palette from Image */
+  --color-brand-black: #000000;
+  --color-brand-white: #ffffff;
+  --color-brand-dark-1: #161616;
+  --color-brand-dark-2: #1b1b1b;
+  --color-brand-dark-3: #151515;
+  --color-brand-accent-muted: #8f6e6e;
+  --color-brand-grey-dark: #5e5e5e;
+  --color-brand-grey-medium: #808080;
+  --color-brand-grey-light: #a4a4a4;
+  --color-brand-surface-light: #f7f7f7;
+  --color-brand-surface-muted: #f6f6f6;
+  --color-brand-surface-warm: #dcdad3;
+  --color-brand-surface-cool: #f2f1ee;
+  --color-brand-taupe: #96948d;
+  --color-brand-charcoal: #585858;
+  --color-brand-stone: #918e86;
+  --color-brand-slate: #575757;
+  --color-brand-silver: #a9a9a9;
+
+  /* Standardized Variables for Components */
+  --color-brand-bg: var(--color-brand-white);
+  --color-brand-surface: var(--color-brand-surface-light);
+  --color-brand-accent: var(--color-brand-dark-1);
+  --color-brand-text-main: var(
+    --color-brand-dark-1
+  ); /* Changed from dark-2 for better contrast */
+  --color-brand-text-muted: #4a4a4a; /* Darker grey for better accessibility (was #5e5e5e) */
+  --color-brand-heading: var(--color-brand-black);
+  --color-brand-border: #d1d1d1; /* Darker border for visibility */
+
+  /* Accessible Font Size Scale Overrides */
+  --font-size-xs: 0.9375rem; /* 15px (standardized minimum for accessibility) */
+  --font-size-sm: 1rem; /* 16px */
+  --font-size-base: 1.125rem; /* 18px (base body size) */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-xl: 1.5rem; /* 24px */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  color: var(--color-brand-text-main);
+  background-color: var(--color-brand-bg);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* Force better contrast for common grey classes if used */
+.text-zinc-400,
+.text-zinc-500 {
+  color: var(--color-brand-text-muted) !important;
+}
+
+/* SEO Friendly Smooth Scroll Padding */
+section[id] {
+  scroll-margin-top: 120px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+  color: var(--color-brand-heading);
+  letter-spacing: 0.05em; /* Reduced for better readability */
+  font-weight: 500; /* Increased for better visibility */
+  text-transform: uppercase;
+}
+
+.text-spaced {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
 }
