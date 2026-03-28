@@ -85,7 +85,7 @@ export async function generateMetadata(): Promise<Metadata> {
           width: 1200,
           height: 630,
           alt: "Gemstone Therapies Clinic — stone therapy & pain care in Lahore",
-          type: "image/png",
+          type: "image/webp",
         },
       ],
       locale: "en_PK",

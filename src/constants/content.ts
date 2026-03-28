@@ -3,7 +3,7 @@
  * Replace with real URLs or `/assets/...` when you upload media.
  */
 export const PLACEHOLDERS = {
-  og: "https://placehold.co/1200x630/e8e8e8/666666?text=Gemstone+Therapies",
+  og: "/assets/hero-image.webp",
   hero: "/assets/hero-image.webp",
   sectionWide: (label: string) =>
     `https://placehold.co/1400x788/e8e8e8/666666?text=${encodeURIComponent(label)}`,
