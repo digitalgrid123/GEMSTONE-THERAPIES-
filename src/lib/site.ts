@@ -13,7 +13,7 @@ export function getSiteUrl(): string {
     const host = vercel.replace(/\/+$/, "");
     return host.startsWith("http") ? host : `https://${host}`;
   }
-  return "http://localhost:3000";
+  return "https://gemstonetherapies.store";
 }
 
 export function getAbsoluteUrl(path: string): string {

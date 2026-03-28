@@ -39,6 +39,10 @@ const SEO_KEYWORDS: string[] = [
   "Moon Market Gulshan e Ravi clinic",
   "pain care clinic Lahore",
   "non-invasive back pain treatment",
+  "gemstone skin care lahore",
+  "skin care treatment with gemstone therapy",
+  "gemstone facial treatment lahore",
+  "natural skin healing gemstone therapy",
 ];
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -49,9 +53,9 @@ export async function generateMetadata(): Promise<Metadata> {
     process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION?.trim();
 
   const titleDefault =
-    "Gemstone Therapies Lahore | Dr. Shahid Aqeel Rana | Stone Therapy & Pain Clinic";
+    "Gemstone Therapies & Skin Care Lahore | Dr. Shahid Aqeel Rana | Stone Therapy & Pain Clinic";
   const description =
-    "Gemstone Therapies Pain Care Clinic in Gulshan e Ravi, Lahore. Dr. Shahid Aqeel Rana — certified stone therapist & homoeopathic physician. Hot and cold stone therapy, FIR heat, slip disc, back and joint pain. Book 0321-4014284.";
+    "Advanced Gemstone & Stone Therapy in Lahore by Dr. Shahid Aqeel Rana. Non-surgical slip disc treatment, back pain relief, FIR heat therapy, and specialized Gemstone Skin Care. Visit Gosha e Shifa & Moon Market. Call 0321-4014284.";
 
   return {
     metadataBase,
