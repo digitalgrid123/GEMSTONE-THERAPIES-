@@ -48,14 +48,20 @@ export const SITE_CONTENT = {
     subtext:
       "For the first time in Pakistan, spinal disc problems (slip disc, disc bulge, back pain) are now being treated without surgery — using advanced machinery for stone therapy procedure.",
     badges: ["U.S FDA Approved", "No Surgery", "No Drugs", "No Side Effects"],
+    urduBadges: [
+      "امریکی ایف ڈی اے سے تصدیق شدہ",
+      "بغیر سرجری",
+      "بغیر ادویات",
+      "بغیر سائیڈ ایفیکٹ",
+    ],
   },
   locations: [
     {
       name: "Gosha e Shifa Hospital",
       urduName: "گوشہ شفا ء ہسپتال",
       address: "Third Floor, 759 A Gulshan e Ravi, Lahore",
-      timings: "9 AM to 2 PM",
-      urduTimings: "صبح 9 تا 2 بجے",
+      timings: "9 AM to 2 PM & 5 PM to 6 PM",
+      urduTimings: "صبح 9 تا 2 بجے اور شام 5 تا 6بجے",
       mapUrl: "https://maps.app.goo.gl/octqogTkKbNEnHDn9",
     },
     {
@@ -73,6 +79,7 @@ export const SITE_CONTENT = {
     "REFLEXOLOGY",
     "THERMAL MASSAGE",
     "HOMOEOPATHIC ALTERNATIVE MEDICINE (German method base)",
+    "GEMSTONE SKIN CARE",
   ],
   conditions: [
     "Neck Pain",
@@ -398,6 +405,12 @@ export const SITE_CONTENT = {
   ],
   urduServices: {
     conditionsTitle: "جدید مشینری اور جیڈ سٹون تھراپی کے ذریعے علاج",
+    taglines: [
+      "بغیر سرجری اور ادویات کے درد کا علاج",
+      "بغیر کسی سائیڈ ایفیکٹ کے درد کا علاج",
+      "امریکی ایف ڈی اے سے تصدیق شدہ سٹون تھراپی ٹیکنالوجی",
+      "لیڈیز کے لیے فی میل سٹاف موجود ھے",
+    ],
     conditions: [
       "کمر درد کا علاج",
       "گردن کے درد کا علاج",
@@ -409,6 +422,8 @@ export const SITE_CONTENT = {
       "مہروں کا علاج",
       "گھٹنوں کے درد کا علاج",
       "روٹیٹر کف کا علاج",
+      "کہنی کے درد کا علاج",
+      "کلائی کے درد کا علاج",
       "سرجری کے بعد درد کا علاج",
     ],
   },

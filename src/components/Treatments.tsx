@@ -55,6 +55,25 @@ export function Treatments() {
           </motion.div>
         ))}
       </div>
+
+      <div
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6 max-w-6xl mx-auto mt-24 pt-16 border-t border-brand-border"
+        dir="rtl"
+      >
+        {SITE_CONTENT.urduServices.conditions.map((condition, idx) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, x: 10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: idx * 0.02 }}
+            className="flex items-center gap-3 text-brand-text-muted group cursor-default"
+          >
+            <div className="w-1 h-1 bg-brand-accent rounded-full" />
+            <span className="text-sm md:text-base font-bold">{condition}</span>
+          </motion.div>
+        ))}
+      </div>
     </Section>
   );
 }

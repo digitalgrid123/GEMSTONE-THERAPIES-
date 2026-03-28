@@ -18,9 +18,17 @@ export function LadiesCare() {
             className="space-y-10"
           >
             <div className="space-y-6">
-              <h3 className="text-brand-text-muted font-bold tracking-[0.4em] uppercase text-xs">
-                {SITE_CONTENT.ladiesCare.subtitle}
-              </h3>
+              <div className="space-y-2">
+                <h3 className="text-brand-text-muted font-bold tracking-[0.4em] uppercase text-xs">
+                  {SITE_CONTENT.ladiesCare.subtitle}
+                </h3>
+                <p
+                  className="text-brand-text-muted font-bold text-lg"
+                  dir="rtl"
+                >
+                  {SITE_CONTENT.urduServices.taglines[3]}
+                </p>
+              </div>
               <h2 className="text-2xl md:text-4xl font-serif text-brand-heading leading-tight tracking-[0.2em] uppercase font-normal">
                 {SITE_CONTENT.ladiesCare.title}
               </h2>

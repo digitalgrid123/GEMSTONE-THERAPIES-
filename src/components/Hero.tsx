@@ -57,15 +57,30 @@ export function Hero() {
             </div>
 
             {/* Badges */}
-            <div className="flex flex-wrap justify-center gap-x-12 gap-y-4 pt-10 border-t border-brand-border">
-              {SITE_CONTENT.hero.badges.map((badge, idx) => (
-                <div key={idx} className="flex items-center gap-3">
-                  <div className="w-1 h-1 bg-brand-accent rounded-full" />
-                  <span className="text-xs font-bold tracking-[0.25em] uppercase text-brand-text-muted">
-                    {badge}
-                  </span>
-                </div>
-              ))}
+            <div className="flex flex-col gap-6 pt-10 border-t border-brand-border">
+              <div className="flex flex-wrap justify-center gap-x-12 gap-y-4">
+                {SITE_CONTENT.hero.badges.map((badge, idx) => (
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-1 h-1 bg-brand-accent rounded-full" />
+                    <span className="text-xs font-bold tracking-[0.25em] uppercase text-brand-text-muted">
+                      {badge}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div
+                className="flex flex-wrap justify-center gap-x-12 gap-y-4 font-bold"
+                dir="rtl"
+              >
+                {SITE_CONTENT.hero.urduBadges.map((badge, idx) => (
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-1 h-1 bg-brand-accent rounded-full" />
+                    <span className="text-sm md:text-base text-brand-text-muted">
+                      {badge}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </motion.div>
