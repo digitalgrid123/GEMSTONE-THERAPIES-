@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return [];
   }
 
-  const base = getSiteUrl().replace(/\/+$/, "");
+  const base = getSiteUrl().trim().replace(/\/+$/, "");
   const lastModified = new Date();
 
   return [

@@ -4,15 +4,13 @@
  * On Vercel, preview deployments fall back to https://VERCEL_URL automatically.
  */
 export function getSiteUrl(): string {
+  // 1. Explicitly set URL (e.g. from environment variables)
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
-  if (explicit) {
+  if (explicit && explicit !== "undefined" && explicit !== "") {
     return explicit.replace(/\/+$/, "");
   }
-  const vercel = process.env.VERCEL_URL?.trim();
-  if (vercel) {
-    const host = vercel.replace(/\/+$/, "");
-    return host.startsWith("http") ? host : `https://${host}`;
-  }
+
+  // 2. Default production URL
   return "https://gemstonetherapies.store";
 }
 
