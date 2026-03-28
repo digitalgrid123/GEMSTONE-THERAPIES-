@@ -1,3 +1,5 @@
+"use client";
+
 import { SITE_CONTENT } from "@/constants/content";
 import { motion } from "framer-motion";
 
