@@ -65,9 +65,9 @@ export function Navbar() {
   return (
     <nav
       className={cn(
-        "fixed top-9 left-0 right-0 z-50 transition-all duration-300 px-4 md:px-8",
+        "sticky top-0 left-0 right-0 z-50 transition-all duration-300 px-4 md:px-8",
         scrolled
-          ? "top-0 py-3.5 bg-white/95 backdrop-blur-md shadow-sm"
+          ? "py-3.5 bg-white/95 backdrop-blur-md shadow-sm border-b border-brand-border/50"
           : "py-5 bg-white",
       )}
     >

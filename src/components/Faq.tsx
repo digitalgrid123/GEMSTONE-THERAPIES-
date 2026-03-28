@@ -29,10 +29,10 @@ export function Faq() {
               <button
                 type="button"
                 onClick={() => setOpen(isOpen ? null : idx)}
-                className="flex w-full items-center justify-between gap-6 px-8 py-8 text-left group"
+                className="flex w-full items-center justify-between gap-4 md:gap-6 px-6 py-6 md:px-8 md:py-8 text-left group"
                 aria-expanded={isOpen}
               >
-                <span className="font-serif text-lg md:text-xl text-brand-text-main leading-tight uppercase tracking-widest font-normal group-hover:text-brand-text-muted transition-colors">
+                <span className="font-serif text-base md:text-xl text-brand-text-main leading-tight uppercase tracking-widest font-normal group-hover:text-brand-text-muted transition-colors">
                   {item.q}
                 </span>
                 <ChevronDown
@@ -49,7 +49,7 @@ export function Faq() {
                 )}
               >
                 <div className="overflow-hidden">
-                  <div className="px-8 pb-10">
+                  <div className="px-6 pb-8 md:px-8 md:pb-10">
                     <div className="w-12 h-px bg-brand-border mb-6" />
                     <p className="text-brand-text-muted font-medium leading-relaxed text-sm md:text-base max-w-2xl">
                       {item.a}

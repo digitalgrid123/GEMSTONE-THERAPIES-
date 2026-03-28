@@ -30,7 +30,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn("py-20 md:py-32 lg:py-40 overflow-hidden", toneClass[tone], className)}
+      className={cn("py-16 md:py-24 lg:py-32 overflow-hidden", toneClass[tone], className)}
     >
       {bleed ? (
         children

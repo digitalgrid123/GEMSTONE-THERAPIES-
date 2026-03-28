@@ -18,7 +18,7 @@ export function ProductDetails() {
         >
           <div
             className={cn(
-              "grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center",
+              "grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center",
               idx % 2 === 1 ? "lg:flex-row-reverse" : "",
             )}
           >
@@ -28,15 +28,15 @@ export function ProductDetails() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className={cn(
-                "space-y-10",
+                "space-y-8 md:space-y-10",
                 idx % 2 === 1 ? "lg:order-2" : "lg:order-1",
               )}
             >
-              <div className="space-y-6">
-                <h3 className="text-brand-text-muted font-bold tracking-[0.4em] uppercase text-xs">
+              <div className="space-y-4 md:space-y-6">
+                <h3 className="text-brand-text-muted font-bold tracking-[0.4em] uppercase text-[10px] sm:text-xs">
                   Technology Pillar {idx + 1}
                 </h3>
-                <h2 className="text-2xl md:text-3xl font-serif text-brand-heading leading-tight tracking-[0.2em] uppercase font-normal">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-serif text-brand-heading leading-tight tracking-[0.2em] uppercase font-normal">
                   {section.heading}
                 </h2>
                 <div className="w-12 h-px bg-brand-border" />

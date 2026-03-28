@@ -57,7 +57,7 @@ export function Treatments() {
       </div>
 
       <div
-        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6 max-w-6xl mx-auto mt-24 pt-16 border-t border-brand-border"
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-6 md:gap-x-8 md:gap-y-6 max-w-6xl mx-auto mt-24 pt-16 border-t border-brand-border"
         dir="rtl"
       >
         {SITE_CONTENT.urduServices.conditions.map((condition, idx) => (

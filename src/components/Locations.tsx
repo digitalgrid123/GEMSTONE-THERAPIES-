@@ -23,7 +23,7 @@ export function Locations() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.1 }}
-            className="space-y-10 p-10 md:p-12 bg-white border border-brand-border rounded-sm shadow-sm"
+            className="space-y-10 p-6 sm:p-10 md:p-12 bg-white border border-brand-border rounded-sm shadow-sm"
           >
             <div className="space-y-6">
               <div className="flex items-center gap-3 text-brand-text-muted">

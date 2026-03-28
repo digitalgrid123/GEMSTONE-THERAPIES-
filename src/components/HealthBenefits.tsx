@@ -24,12 +24,12 @@ export function HealthBenefits() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.8 }}
             className={cn(
-              "flex flex-col lg:flex-row items-center gap-16 lg:gap-24",
+              "flex flex-col lg:flex-row items-center gap-10 lg:gap-24",
               idx % 2 === 1 ? "lg:flex-row-reverse" : "",
             )}
           >
             <div className="w-full lg:w-1/2">
-              <div className="relative aspect-square w-full overflow-hidden shadow-sm">
+              <div className="relative aspect-square w-full overflow-hidden shadow-sm rounded-sm">
                 <Image
                   src={benefit.image}
                   alt={benefit.title}
@@ -40,9 +40,9 @@ export function HealthBenefits() {
               </div>
             </div>
 
-            <div className="w-full lg:w-1/2 space-y-8">
+            <div className="w-full lg:w-1/2 space-y-6 md:space-y-8">
               <div className="space-y-4">
-                <h3 className="text-2xl md:text-3xl font-serif text-brand-heading leading-tight uppercase tracking-widest font-medium">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-serif text-brand-heading leading-tight uppercase tracking-widest font-medium">
                   {benefit.title}
                 </h3>
                 <div className="w-16 h-px bg-brand-border" />
