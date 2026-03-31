@@ -245,6 +245,10 @@ export const SITE_CONTENT = {
       "Far infrared therapy has been clinically shown to offer diverse health benefits across pain relief, cardiovascular support, and immune function, making it a valuable tool in modern wellness, including inflammation and aiding in cellular repair, supporting both relaxation and long-term vitality health. As part of a comprehensive approach to health, gemstone and FIR heat therapies are designed to naturally enhance your body's healing and wellness.",
     ],
   },
+  social: {
+    tiktok: "https://www.tiktok.com/@muhammadshahidaqeel",
+    youtube: "https://www.youtube.com/@gemstonetherapies",
+  },
   doctor: {
     name: "Dr. Shahid Aqeel Rana",
     titles: [

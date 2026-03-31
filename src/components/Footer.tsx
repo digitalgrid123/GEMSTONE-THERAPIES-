@@ -20,7 +20,22 @@ export function Footer() {
               {SITE_CONTENT.brand.tagline}
             </p>
             <div className="pt-4 flex gap-4">
-              {/* Optional: Add social icons here if needed */}
+              <a
+                href={SITE_CONTENT.social.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold uppercase text-zinc-300 hover:text-white"
+              >
+                TikTok
+              </a>
+              <a
+                href={SITE_CONTENT.social.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-bold uppercase text-zinc-300 hover:text-white"
+              >
+                YouTube
+              </a>
             </div>
           </div>
 

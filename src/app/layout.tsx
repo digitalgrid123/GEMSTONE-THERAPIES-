@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lato, Playfair_Display } from "next/font/google";
 import { PLACEHOLDERS } from "@/constants/content";
 import { getSiteUrl, isNoIndex, SITE_BRAND } from "@/lib/site";
+import Script from "next/script";
 import "./globals.css";
 
 const lato = Lato({
@@ -213,6 +214,12 @@ export default function RootLayout({
           "Shahid Aqeel Rana",
           "Dr Shahid Aqeel",
         ],
+        sameAs: [
+          "https://www.tiktok.com/@muhammadshahidaqeel",
+          "https://www.youtube.com/@gemstonetherapies"
+        ],
+        image: PLACEHOLDERS.portrait,
+        description: "Expert in Gemstone Heat Therapy and Homoeopathic Alternative Medicine (German method base). Providing non-invasive solutions for acute and chronic back pain under expert supervision.",
         jobTitle:
           "Certified Stone Therapist, Consultant Homoeopathic Physician",
         worksFor: { "@id": clinicId },
@@ -251,6 +258,22 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            strategy="afterInteractive"
+          />
+        )}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+            `}
+          </Script>
+        )}
         {children}
       </body>
     </html>
