@@ -171,7 +171,7 @@ export default function RootLayout({
         description: SITE_BRAND.tagline,
         address: {
           "@type": "PostalAddress",
-          streetAddress: "759-A Gulshan e Ravi; Moon Market area",
+          streetAddress: "22/D II Sham Nahar Road; Gulshan e Ravi",
           addressLocality: "Lahore",
           addressRegion: "Punjab",
           postalCode: "54000",
@@ -254,6 +254,14 @@ export default function RootLayout({
       className={`${lato.variable} ${playfairDisplay.variable} h-full antialiased selection:bg-brand-accent selection:text-white`}
     >
       <body className="min-h-full flex flex-col">
+        {process.env.NEXT_PUBLIC_ADSENSE_ID && (
+          <Script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_ID}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

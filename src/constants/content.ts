@@ -67,10 +67,10 @@ export const SITE_CONTENT = {
     {
       name: "Gemstone Therapies Clinic",
       urduName: "جم سٹون تھراپی کلینک",
-      address: "Moon Market, Near Hot Roast Restaurant, Gulshan e Ravi, Lahore",
+      address: "22 /D II SHAM NAHAR Road, Near Khwaja Pakwan, Gulshan e Ravi, Lahore",
       timings: "6 PM to 9 PM",
       urduTimings: "شام 6 تا 9بجے",
-      mapUrl: "https://maps.app.goo.gl/fYbNHzrB2CycmZ3G8",
+      mapUrl: "https://maps.app.goo.gl/a9uDSD6jPHRDhLcWA",
     },
   ],
   services: [
