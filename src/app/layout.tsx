@@ -37,7 +37,7 @@ const SEO_KEYWORDS: string[] = [
   "neck shoulder pain Lahore",
   "homoeopathic physician Lahore",
   "Gosha e Shifa Hospital stone therapy",
-  "Moon Market Gulshan e Ravi clinic",
+  "Khwaja Fareed Road Gulshan e Ravi clinic",
   "pain care clinic Lahore",
   "non-invasive back pain treatment",
   "gemstone skin care lahore",
@@ -56,7 +56,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const titleDefault =
     "Gemstone Therapies & Skin Care Lahore | Dr. Shahid Aqeel Rana | Stone Therapy & Pain Clinic";
   const description =
-    "Advanced Gemstone & Stone Therapy in Lahore by Dr. Shahid Aqeel Rana. Non-surgical slip disc treatment, back pain relief, FIR heat therapy, and specialized Gemstone Skin Care. Visit Gosha e Shifa & Moon Market. Call 0321-4014284.";
+    "Advanced Gemstone & Stone Therapy in Lahore by Dr. Shahid Aqeel Rana. Non-surgical slip disc treatment, back pain relief, FIR heat therapy, and specialized Gemstone Skin Care. Visit Gosha e Shifa & Khwaja Fareed Road. Call 0321-4014284.";
 
   return {
     metadataBase,
@@ -216,10 +216,11 @@ export default function RootLayout({
         ],
         sameAs: [
           "https://www.tiktok.com/@muhammadshahidaqeel",
-          "https://www.youtube.com/@gemstonetherapies"
+          "https://www.youtube.com/@gemstonetherapies",
         ],
         image: PLACEHOLDERS.portrait,
-        description: "Expert in Gemstone Heat Therapy and Homoeopathic Alternative Medicine (German method base). Providing non-invasive solutions for acute and chronic back pain under expert supervision.",
+        description:
+          "Expert in Gemstone Heat Therapy and Homoeopathic Alternative Medicine (German method base). Providing non-invasive solutions for acute and chronic back pain under expert supervision.",
         jobTitle:
           "Certified Stone Therapist, Consultant Homoeopathic Physician",
         worksFor: { "@id": clinicId },

@@ -60,6 +60,7 @@ export const SITE_CONTENT = {
       name: "Gosha e Shifa Hospital",
       urduName: "گوشہ شفا ء ہسپتال",
       address: "Third Floor, 759 A Gulshan e Ravi, Lahore",
+      urduAddress: "تھرڈ فلور، 759 اے گلشن راوی، لاہور",
       timings: "9 AM to 2 PM & 5 PM to 6 PM",
       urduTimings: "صبح 9 تا 2 بجے اور شام 5 تا 6بجے",
       mapUrl: "https://maps.app.goo.gl/octqogTkKbNEnHDn9",
@@ -68,7 +69,9 @@ export const SITE_CONTENT = {
       name: "Gemstone Therapies Clinic",
       urduName: "جم سٹون تھراپی کلینک",
       address:
-        "22 /D II SHAM NAHAR Road, Near Khwaja Pakwan, Gulshan e Ravi, Lahore",
+        "22/D II Khwaja Fareed Road, Near Khwaja Pakwan, Gulshan e Ravi, Lahore",
+      urduAddress:
+        "22/D II۔ خواجہ فرید روڈ ، نز د خواجہ پکوان ، گلشن راوی ،لاہور",
       timings: "6 PM to 9 PM",
       urduTimings: "شام 6 تا 9بجے",
       mapUrl: "https://goo.gl/maps/a9uDSD6jpHRDhLcWA?g_st=aw",
@@ -451,7 +454,7 @@ export const SITE_CONTENT = {
     },
     {
       q: "How do I book a consultation?",
-      a: "Call or WhatsApp 0321-4014284. Your first consultation can be scheduled at the hospital or Moon Market location depending on availability.",
+      a: "Call or WhatsApp 0321-4014284. Your first consultation can be scheduled at the hospital or Khwaja Fareed Road location depending on availability.",
     },
   ],
 };

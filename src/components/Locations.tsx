@@ -56,6 +56,11 @@ export function Locations() {
               <h3 className="text-2xl md:text-3xl font-bold text-brand-text-main leading-snug">
                 {location.urduName}
               </h3>
+              {location.urduAddress && (
+                <p className="text-brand-text-muted text-lg font-medium leading-relaxed">
+                  {location.urduAddress}
+                </p>
+              )}
               <div className="flex items-center justify-end gap-3 text-brand-text-muted text-lg">
                 <Clock className="w-5 h-5 text-brand-text-muted shrink-0" />
                 <span className="font-medium">{location.urduTimings}</span>

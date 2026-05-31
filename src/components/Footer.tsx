@@ -84,6 +84,11 @@ export function Footer() {
                     <p className="text-zinc-300 font-medium text-sm leading-relaxed">
                       {loc.address}
                     </p>
+                    {loc.urduAddress && (
+                      <p className="text-zinc-400 font-medium text-sm leading-relaxed pt-1" dir="rtl">
+                        {loc.urduAddress}
+                      </p>
+                    )}
                   </div>
                 ))}
               </div>
