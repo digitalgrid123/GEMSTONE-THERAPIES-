@@ -56,7 +56,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const titleDefault =
     "Gemstone Therapies & Skin Care Lahore | Dr. Shahid Aqeel Rana | Stone Therapy & Pain Clinic";
   const description =
-    "Advanced Gemstone & Stone Therapy in Lahore by Dr. Shahid Aqeel Rana. Non-surgical slip disc treatment, back pain relief, FIR heat therapy, and specialized Gemstone Skin Care. Visit Gosha e Shifa & Khwaja Fareed Road. Call 0321-4014284.";
+    "Advanced Gemstone & Stone Therapy in Lahore by Dr. Shahid Aqeel Rana. Non-surgical slip disc treatment, back pain relief, FIR heat therapy, and specialized Gemstone Skin Care. Visit Gosha e Shifa & Khwaja Fareed Road. Call 0300-4119061.";
 
   return {
     metadataBase,
@@ -131,7 +131,7 @@ export async function generateMetadata(): Promise<Metadata> {
       shortcut: "/favicon.svg",
     },
     other: {
-      "contact:phone_number": "+923214014284",
+      "contact:phone_number": "+923004119061",
       "geo.region": "PK-PB",
       "geo.placename": "Lahore",
     },
@@ -167,7 +167,7 @@ export default function RootLayout({
         ],
         url: `${siteUrl}/`,
         image: PLACEHOLDERS.og,
-        telephone: "+923214014284",
+        telephone: "+923004119061",
         description: SITE_BRAND.tagline,
         address: {
           "@type": "PostalAddress",
@@ -224,7 +224,7 @@ export default function RootLayout({
         jobTitle:
           "Certified Stone Therapist, Consultant Homoeopathic Physician",
         worksFor: { "@id": clinicId },
-        telephone: "+923214014284",
+        telephone: "+923004119061",
         knowsAbout: [
           "Stone therapy",
           "Hot stone therapy",

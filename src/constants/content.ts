@@ -26,11 +26,11 @@ export const SITE_CONTENT = {
     doctor: "Dr. Shahid Aqeel Rana",
     qualifications:
       "Certified Stone Therapist | Consultant HOMEO Physician | HOD Stone Therapy Department",
-    phone: "0321-4014284",
-    whatsapp: "923214014284",
+    phone: "0300-4119061",
+    whatsapp: "923004119061",
   },
   announcement:
-    "Book Your Free Consultation Today - Call or WhatsApp 0321-4014284 — click here >>>>",
+    "Book Your Free Consultation Today - Call or WhatsApp 0300-4119061 — click here >>>>",
   navigation: [
     { label: "HOME", href: "#home" },
     { label: "PRODUCTS", href: "#products" },
@@ -450,11 +450,11 @@ export const SITE_CONTENT = {
     },
     {
       q: "What are your clinic timings and locations?",
-      a: "Gosha e Shifa Hospital (Third Floor): 9 AM – 2 PM. Gemstone Therapies Clinic, Moon Market, Gulshan e Ravi: 6 PM – 9 PM. Call or WhatsApp 0321-4014284 to confirm before visiting.",
+      a: "Gosha e Shifa Hospital (Third Floor): 9 AM – 2 PM. Gemstone Therapies Clinic, Moon Market, Gulshan e Ravi: 6 PM – 9 PM. Call or WhatsApp 0300-4119061 to confirm before visiting.",
     },
     {
       q: "How do I book a consultation?",
-      a: "Call or WhatsApp 0321-4014284. Your first consultation can be scheduled at the hospital or Khwaja Fareed Road location depending on availability.",
+      a: "Call or WhatsApp 0300-4119061. Your first consultation can be scheduled at the hospital or Khwaja Fareed Road location depending on availability.",
     },
   ],
 };
